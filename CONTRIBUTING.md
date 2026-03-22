@@ -18,8 +18,14 @@ Thank you for being interested in contributing to the project! It wouldn't be wh
 - Clone your fork of the repository to your local machine using `git clone https://www.github.com/<your-username>/Medieval-Factions.git`
 - Open the project in your preferred text editor or IDE.
 - Try compiling the plugin using the following command:
+
+  Linux:
   ```bash
   ./gradlew build
+  ```
+  Windows:
+  ```bat
+  .\gradlew.bat build
   ```
   If you encounter any errors, please create an issue for it.
 

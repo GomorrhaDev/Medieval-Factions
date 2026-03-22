@@ -17,7 +17,7 @@ making any changes.
 
 - `src/main/kotlin/` – Plugin source code (Kotlin)
 - `src/main/resources/` – `plugin.yml`, `config.yml`, Flyway migration scripts, and `lang/` language files
-- `src/test/java/` – Unit tests
+- `src/test/kotlin/` – Unit tests
 - `.github/workflows/` – CI and release workflows
 - `compose.yml` – Docker Compose configuration for the local development server
 - `up.sh` / `down.sh` / `reload-plugin.sh` – Helper scripts for the Docker dev server
@@ -27,7 +27,7 @@ making any changes.
 - Use the `lang/` resource files for every user-facing string; never hard-code messages in Kotlin or Java.
 - Follow the existing package structure under `com.dansplugins.factionsystem` when adding new classes.
 - Commands are registered and handled via the existing command system in the `command/` package.
-- Event listeners live in the `listener/` package and should extend `Listener`.
+- Event listeners live in the `listener/` package and should implement `Listener`.
 - All database access goes through the service classes in the respective domain packages (e.g. `faction/`, `claim/`, `player/`).
 - New configuration options must be documented in `CONFIG.md`.
 - New commands must be documented in `COMMANDS.md`.
